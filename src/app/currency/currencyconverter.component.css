@@ -1,0 +1,77 @@
+.converter {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.converter h2 {
+  margin-top: 0;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.input-group select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.exchange-rates {
+  margin-top: 20px;
+}
+
+.exchange-rates h3 {
+  text-align: center;
+}
+
+.exchange-rates table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.exchange-rates th,
+.exchange-rates td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.exchange-rates th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.exchange-rates tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.exchange-rates tr:hover {
+  background-color: #eaeaea;
+}
