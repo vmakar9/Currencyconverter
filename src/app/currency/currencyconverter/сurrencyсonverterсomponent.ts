@@ -1,11 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 import {ExchangeRatesResponse} from "../interfaces/exchangeratesresponse.interface";
 import {CurrencyService} from "./currencyservice/currency.service";
 
-interface ExchangeRates {
-  [currency: string]: number;
-}
 
 @Component({
   selector: 'app-currency-converter',
@@ -19,7 +16,8 @@ export class CurrencyConverterComponent {
   fromAmount: number;
   toAmount: number;
 
-  constructor(private currencyService: CurrencyService) {}
+  constructor(private currencyService: CurrencyService) {
+  }
 
   ngOnInit(): void {
     this.currencyService.getExchangeRates().subscribe((data: ExchangeRatesResponse) => {
@@ -34,7 +32,7 @@ export class CurrencyConverterComponent {
       const toRate = this.exchangeRates.rates[this.toCurrency];
 
       this.toAmount = (this.fromAmount / fromRate) * toRate;
-    }else if (this.fromAmount < 0){
+    } else if (this.fromAmount < 0) {
       alert('Введіть додатні числа');
     }
 

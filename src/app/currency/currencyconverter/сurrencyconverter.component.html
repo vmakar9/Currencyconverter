@@ -1,20 +1,17 @@
-
-
-
-<div class ="converter">
+<div class="converter">
   <h2>Currency Converter</h2>
   <div class="input-group">
-    <select [(ngModel)]="fromCurrency" (change)="convertCurrency()">
+    <select (change)="convertCurrency()" [(ngModel)]="fromCurrency">
       <option *ngFor="let currency of getObjectKeys(exchangeRates.rates)" [value]="currency">{{ currency }}</option>
     </select>
-    <input type="number" [(ngModel)]="fromAmount" (input)="convertCurrency()" placeholder="Enter amount" />
+    <input (input)="convertCurrency()" [(ngModel)]="fromAmount" placeholder="Enter amount" type="number"/>
   </div>
 
   <div class="input-group">
-    <select [(ngModel)]="toCurrency" (change)="convertCurrency()">
+    <select (change)="convertCurrency()" [(ngModel)]="toCurrency">
       <option *ngFor="let currency of getObjectKeys(exchangeRates.rates)" [value]="currency">{{ currency }}</option>
     </select>
-    <input type="number" [(ngModel)]="toAmount" (input)="convertCurrency()" placeholder="Enter amount" />
+    <input (input)="convertCurrency()" [(ngModel)]="toAmount" placeholder="Enter amount" type="number"/>
   </div>
 
   <button (click)="reverseConversion()">Reverse</button>
