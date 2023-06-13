@@ -1,0 +1,41 @@
+.exchange-rates {
+  margin-top: 20px;
+}
+
+.exchange-rates h3 {
+  text-align: center;
+}
+
+.exchange-rates table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.exchange-rates th,
+.exchange-rates td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.exchange-rates th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.exchange-rates tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.exchange-rates tr:hover {
+  background-color: #eaeaea;
+}
+
+.converter {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
