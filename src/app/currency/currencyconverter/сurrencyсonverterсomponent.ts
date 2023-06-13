@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import {ExchangeRatesResponse} from "./exchangeratesresponse.interface";
-import {CurrencyService} from "./currency.service";
+import {ExchangeRatesResponse} from "../interfaces/exchangeratesresponse.interface";
+import {CurrencyService} from "./currencyservice/currency.service";
 
 interface ExchangeRates {
   [currency: string]: number;
