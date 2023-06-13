@@ -1,6 +1,6 @@
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {ExchangeRatesResponse} from "../../interfaces/exchangeratesresponse.interface";
+import {ExchangeRatesResponse} from "../interfaces/exchangeratesresponse.interface";
 import {Injectable} from "@angular/core";
 
 @Injectable({

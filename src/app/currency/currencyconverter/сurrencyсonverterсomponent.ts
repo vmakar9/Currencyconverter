@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 import {ExchangeRatesResponse} from "../interfaces/exchangeratesresponse.interface";
-import {CurrencyService} from "./currencyservice/currency.service";
+import {CurrencyService} from "../currencyservice/currency.service";
 
 
 @Component({
